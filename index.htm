@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="userDataContainer">
+		<div class="userDataItemContainer" id="inputData">
+			<form name="userDataForm">
+				<div class="formTopBottomMarginContainer">
+					<label for="fname">Ime</label><br>
+				  	<input type="text" id="fname" name="fname"><br>
+				  	<div id="fNameErrorContainer">
+				  		<!-- HERE COMES PARAGRAPH FOR ERROR -->
+				  	</div>
+				  	<label for="lname">Primek</label><br>
+				  	<input type="text" id="lname" name="lname"><br>
+				  	<div id="lNameErrorContainer">
+				  		<!-- HERE COMES PARAGRAPH FOR ERROR -->
+				  	</div>
+				</div>
+				<br>
+			    <div class="formTopBottomMarginContainer">
+					  <label class="formElement" for="gender">Spol</label>
+					  <input class="formElement" type="radio" id="genderFemale" name="gender" value="female">
+					  <label class="formElement" for="gender">ženski</label>
+					  <input class="formElement" type="radio" id="genderMale" name="gender" value="male">
+					  <label class="formElement" for="gender">moški</label>
+					  <br>
+					  <div id="genderErrorContainer">
+				  		<!-- HERE COMES PARAGRAPH FOR ERROR -->
+				  	  </div>
+			    </div>
+			    <br>
+			    <div class="formTwoColumnContainer">
+			    	<div>
+					  <label class="formElement" for="height">Telesna višina</label><br>
+					  <input class="formElement" type="number" id="height" name="height" placeholder="cm" step="0.01" min="0" max="999">
+					  <div id="heightErrorContainer">
+				  		<!-- HERE COMES PARAGRAPH FOR ERROR -->
+					  </div>
+					</div>
+					<div class="formTwoColumnItemContainer">
+					  <label class="formElement" for="weight">Telesna teža</label><br>
+					  <input class="formElement" type="number" id="weight" name="weight" placeholder="kg" step="0.01" min="0" max="999">
+					  <div id="weightErrorContainer">
+				  		<!-- HERE COMES PARAGRAPH FOR ERROR -->
+					  </div>
+					</div>
+				</div>
+				<br>
+			    <div class="formTopBottomMarginContainer">
+					  <label class="formElement" for="dbirth">Datum rojstva</label><br>
+					  <input class="formElement" type="date" id="dbirth" name="dbirth">
+					  <div id="dBirthErrorContainer">
+				  		<!-- HERE COMES PARAGRAPH FOR ERROR -->
+					  </div>
+				</div>
+				<br>
+				<div class="formTopBottomMarginContainer">
+					  <label class="formElement" for="dwork">Datum prve zaposlitve</label><br>
+					  <input class="formElement" type="date" id="dwork" name="dwork"><br>
+					  <div id="dWorkErrorContainer">
+				  		<!-- HERE COMES PARAGRAPH FOR ERROR -->
+					  </div>
+			  	</div>
+			  	<br>
+			  	<button class="formElement"type="button" onclick="onConfirmButtonPressed()">Izračun</button>
+			</form>
+		</div>
+		<div class="userDataItemContainer" id="outputData">
+			<h3>Izračun podatkov</h3>
+			<hr>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

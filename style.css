@@ -1,0 +1,35 @@
+.userDataContainer {
+	display: grid;
+	grid-template-columns: fit-content(50%)  fit-content(50%) ;
+	background-color: white;
+	padding: 10px;
+	border-radius: 25px;
+}
+
+.userDataItemContainer {
+	background-color: rgb(239, 240, 244);
+	color: black;
+	border-radius: 25px;
+	padding: 20px;
+	margin: 10px;
+}
+
+.formTopBottomMarginContainer {
+	margin: 2px 0px 2px 0px;
+}
+
+.formTwoColumnContainer {
+	display: grid;
+	grid-template-columns: fit-content(100px) fit-content(100px);
+}
+
+.formTwoColumnItemContainer {
+	padding: 0px 10px 0px 10px;
+}
+
+button {
+	background-color: black;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
