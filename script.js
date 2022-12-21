@@ -97,7 +97,7 @@ function onConfirmButtonPressed() {
 function presentThankYouDiv() {
 	const inputContainer = document.getElementById("inputData")
 	inputContainer.setAttribute("style", "text-align: center;")
-	inputContainer.innerHTML = "<img src='checkmark.jpeg' alt='checkmark' style='width:128px;height:128px;'><h1>Hvala lepa</h1><p>vaši podatki so pravilno vpisano, ogleje si rezultate izračuna na desni strani</p><button style='background-color:black; color: white;' type='button'>DONE</button>"
+	inputContainer.innerHTML = "<img src='checkmark.jpeg' alt='checkmark' style='width:128px;height:128px;'><h1>Hvala lepa</h1><p>vaši podatki so pravilno vpisano, ogleje si rezultate izračuna na desni strani</p><button type='button'>DONE</button>"
 }
 
 function refreshCalculatedDataInput(fName, lName, height, weight, firstEmploymentDate, isMale) {
